@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  ul
+    each article in articles
+      li= `喜欢${article.item_info.article_info.digg_count}标题${article.item_info.article_info.title}链接:https//www.juejin.cn/post/${article.item_info.article_id}`
+    else
+      li no data
