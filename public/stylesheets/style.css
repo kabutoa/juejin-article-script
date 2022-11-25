@@ -1,8 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.article-item {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.article-item-like,
+.article-item-link,
+.article-item-title {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.article-item-like--icon {
+  width: 20px;
+  height: auto;
+}
+
+.copy {
+  padding: 8px 12px;
+  border: 1px solid #eee;
+  margin-left: auto;
+  font-size: 16px;
 }
